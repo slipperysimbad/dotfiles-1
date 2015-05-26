@@ -17,6 +17,11 @@
   kept-old-versions 2
   version-control t)
 
+;; Enable paredit mode in Emacs Lisp buffers
+(add-hook 'emacs-lisp-mode-hook
+	  '(lambda ()
+	     (paredit-mode)))
+
 ;; In Gnulib, indent with spaces everywhere (not TABs).
 ;; Exceptions: Makefile and ChangeLog modes.
 (add-hook 'find-file-hook '(lambda ()
