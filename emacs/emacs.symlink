@@ -37,3 +37,5 @@
            (not (string-equal mode-name "Change Log"))
            (not (string-equal mode-name "Makefile")))
       (setq indent-tabs-mode nil))))
+
+(require 'helm-config)
