@@ -9,6 +9,12 @@
 
 (server-start)
 
+(setq backup-directory-alist `(("." . "~/.saves")))
+(setq delete-old-versions t
+  kept-new-versions 6
+  kept-old-versions 2
+  version-control t)
+
 ;; In Gnulib, indent with spaces everywhere (not TABs).
 ;; Exceptions: Makefile and ChangeLog modes.
 (add-hook 'find-file-hook '(lambda ()
